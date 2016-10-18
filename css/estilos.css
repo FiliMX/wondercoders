@@ -1,0 +1,179 @@
+/* RESET */
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* OOCSS */
+.padding{
+    padding: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-default {
+    background-color: #354751;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: white;
+    margin: 8px 0;
+    display: inline-block;
+    
+}
+
+.super-titulo {
+    background-color: #354751;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* OTROS */
+
+.encabezado{
+    background-color: #354751;
+    color: white;
+}
+
+.encabezado__titulo{
+    margin: 0;
+}
+
+.introduccion {
+    background-image: url('../imagenes/cover.jpg'), url('../imagenes/cover-2.jpg');
+    /* background-color: #0C94F5;
+    background-blend-mode: difference; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.introduccion__img {
+    border-radius: 50%;
+    border: 2px solid #354751;
+    width: 150px;
+    height: 150px;
+}
+
+.introduccion__icon {
+    font-size: 40px !important;
+    margin: 0 10px;
+    color: #2870FF;
+}
+
+.habilidades__img {
+    width: 150px;
+    height: 150px;
+}
+
+.habilidades__subtitulo {
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+.trabajos__img {
+    width: 100%;
+}
+
+.pie-de-pagina {
+    background-color: #354751;
+    color: white;
+}
+
+@media screen and (min-width: 768px){
+
+    .super-titulo {
+        padding: 40px 0;
+        font-size: 40px;
+    }
+
+    .introduccion {
+        padding: 80px 10px;
+    }
+
+    .introduccion__imagen {
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .introduccion__texto {
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+    }
+
+    .introduccion__especialidad{
+        font-size: 40px;
+        margin: 10px 0 5px 0;
+    }
+
+    .introduction__sobre-mi {
+        font-weight: 300;
+    }
+
+    .habilidades__contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .habilidades__article {
+        width: 40%;
+    }
+
+    .trabajos__contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .trabajos__article{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .centrar {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    .introduccion__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .introduccion__especialidad{
+        font-size: 45px
+    }
+
+    .introduction__sobre-mi {
+        font-size: 18px;
+    }
+
+
+    .habilidades__article {
+        width: 30%;
+    }
+
+    .trabajos__article{
+        width: 30%;
+    }
+
+    .pie-de-pagina{
+        padding: 30px 0;
+    }
+}
